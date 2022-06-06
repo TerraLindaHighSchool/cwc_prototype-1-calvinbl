@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject Vehicle;
     private Vector3 offset = new Vector3(0, 5, -7);
     
     // Start is called before the first frame update
@@ -17,6 +17,6 @@ public class FollowPlayer : MonoBehaviour
     void LateUpdate()
     {
         //Offset the camera behind the player by adding to the player's position
-        transform.position = player.transform.position + offset;
+        transform.position = Vehicle.transform.position + offset;
     }
 }
